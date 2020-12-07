@@ -7,11 +7,11 @@ import html2canvas from "html2canvas";
 const PosterEdit = (props) => {
   const { user } = props;
   const handleClick = () => {
+    window.scrollTo(0, 0);
     html2canvas(document.getElementById("print"), {
       allowTaint: true,
       useCORS: true,
       logging: true,
-      windowWidth: "300px",
     }).then(function (canvas) {
       saveAs(canvas.toDataURL(), `iSupport${user}.jpg`);
     });
