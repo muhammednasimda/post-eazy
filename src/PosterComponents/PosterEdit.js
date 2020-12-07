@@ -1,11 +1,12 @@
 import styles from "../css/poster.module.scss";
 import { connect } from "react-redux";
-import React from "react";
+import React, { useEffect } from "react";
 import badge from "../images/badge.png";
 import html2canvas from "html2canvas";
 
 const PosterEdit = (props) => {
   const { user } = props;
+
   const handleClick = () => {
     window.scrollTo(0, 0);
     html2canvas(document.getElementById("print"), {
