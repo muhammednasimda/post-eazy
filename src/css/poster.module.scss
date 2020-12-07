@@ -62,7 +62,8 @@ body {
   .backgroundImage {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 300px;
+    height: 100%;
     object-fit: cover;
     overflow: hidden;
   }
