@@ -1,7 +1,7 @@
 import styles from "../css/poster.module.scss";
 import { connect } from "react-redux";
-import React, { useEffect } from "react";
-import badge from "../images/badge.png";
+import React from "react";
+
 import html2canvas from "html2canvas";
 
 const PosterEdit = (props) => {
@@ -35,6 +35,7 @@ const PosterEdit = (props) => {
       <div className={styles.hCenter}>
         <div className={styles.posterEdit} id="print">
           <img className={styles.backgroundImage} src={props.photo} />
+
           <img
             src={`https://fliqapp.xyz/posteazy/${user}.png`}
             className={styles.imageBadge}

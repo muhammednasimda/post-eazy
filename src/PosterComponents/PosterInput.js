@@ -17,6 +17,7 @@ const PosterInput = (props) => {
       //save compressed image to state
       const img = await URL.createObjectURL(compressedFile);
       props.updatePhoto(img);
+
       // setProductImageConverted(URL.createObjectURL(compressedFile));
     } catch (error) {
       console.log(error);

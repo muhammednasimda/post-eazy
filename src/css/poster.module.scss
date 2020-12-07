@@ -57,7 +57,6 @@ body {
   height: 400px;
   position: relative;
   margin-bottom: 20px;
-
   background-color: yellow;
   .backgroundImage {
     position: absolute;
@@ -102,4 +101,8 @@ body {
 }
 input[type="file"] {
   display: none;
+}
+.imcnt {
+  width: 300px;
+  height: 400px;
 }
