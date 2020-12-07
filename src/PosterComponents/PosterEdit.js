@@ -11,6 +11,7 @@ const PosterEdit = (props) => {
       allowTaint: true,
       useCORS: true,
       logging: true,
+      windowWidth: "300px",
     }).then(function (canvas) {
       saveAs(canvas.toDataURL(), `iSupport${user}.jpg`);
     });
